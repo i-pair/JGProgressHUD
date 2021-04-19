@@ -42,6 +42,7 @@ typedef NS_ENUM(NSUInteger, JGProgressHUDStyle) {
     JGProgressHUDStyleLight,
     /** Dark HUD with light elements. */
     JGProgressHUDStyleDark,
+    JGProgressHUDStyleNone
 };
 
 #if TARGET_OS_IOS

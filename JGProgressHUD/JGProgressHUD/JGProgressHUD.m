@@ -767,7 +767,7 @@ static inline UIViewAnimationOptions UIViewAnimationOptionsFromUIViewAnimationCu
             effect = UIBlurEffectStyleExtraLight;
         }
         
-        UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:effect];
+      UIBlurEffect *blurEffect = self.style != JGProgressHUDStyleNone ?  [UIBlurEffect effectWithStyle:effect] : nil;
         
         _blurView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
         
@@ -897,8 +897,10 @@ static inline UIViewAnimationOptions UIViewAnimationOptionsFromUIViewAnimationCu
     else if (self.style == JGProgressHUDStyleLight) {
         effect = UIBlurEffectStyleLight;
     }
-    else {
+    else if (self.style == UIBlurEffectStyleExtraDark) {
         effect = UIBlurEffectStyleExtraLight;
+    } else {
+      effect = 4
     }
     
     UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:effect];
