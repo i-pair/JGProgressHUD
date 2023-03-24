@@ -900,7 +900,7 @@ static inline UIViewAnimationOptions UIViewAnimationOptionsFromUIViewAnimationCu
     else if (self.style == UIBlurEffectStyleExtraDark) {
         effect = UIBlurEffectStyleExtraLight;
     } else {
-      effect = 4
+      effect = 4;
     }
     
     UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:effect];
