@@ -897,7 +897,7 @@ static inline UIViewAnimationOptions UIViewAnimationOptionsFromUIViewAnimationCu
     else if (self.style == JGProgressHUDStyleLight) {
         effect = UIBlurEffectStyleLight;
     }
-    else if (self.style == UIBlurEffectStyleExtraDark) {
+    else if (self.style == JGProgressHUDStyleExtraLight) {
         effect = UIBlurEffectStyleExtraLight;
     } else {
       effect = 4;
